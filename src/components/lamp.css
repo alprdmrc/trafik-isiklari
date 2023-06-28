@@ -1,0 +1,75 @@
+.App {
+  display: inline-flex;
+}
+
+.trafik-lambasi {
+  display: block;
+  height: 300px;
+  width: 120px;
+  position: relative;
+}
+
+.direk {
+  display: block;
+  position: relative;
+  background-color: black;
+  width: 20px;
+  height: 300px;
+  margin: 0 auto;
+}
+.direk::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: black;
+  border-radius: 25px;
+  height: 150px;
+  width: 70px;
+  left: -25px;
+}
+
+.direk::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 70px;
+  height: 20px;
+  bottom: 0;
+  left: -25px;
+}
+.isiklar {
+  right: calc(50% - 20px);
+  top: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.isiklar > div {
+  /* position: absolute; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background-color: grey; */
+}
+
+.red {
+  background-color: rgba(255, 0, 0);
+  opacity: 0.4;
+}
+
+.yellow {
+  background-color: rgba(255, 255, 0);
+  opacity: 0.4;
+}
+
+.green {
+  background-color: rgba(0, 128, 0);
+  opacity: 0.4;
+}
+
+.active {
+  opacity: 1;
+}
