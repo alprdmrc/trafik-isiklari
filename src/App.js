@@ -99,7 +99,6 @@ function App() {
             nextStep={nextStep}
             key={index}
             id={lamp}
-            setTimer={setTimer}
           />
         ))}
       </div>
