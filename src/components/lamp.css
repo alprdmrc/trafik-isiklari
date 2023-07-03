@@ -1,5 +1,7 @@
-.App {
+.cadde {
   display: inline-flex;
+  justify-content: center;
+  width: 100vw;
 }
 
 .trafik-lambasi {
@@ -7,6 +9,7 @@
   height: 300px;
   width: 120px;
   position: relative;
+  padding-bottom: 2rem;
 }
 
 .direk {
@@ -72,4 +75,8 @@
 
 .active {
   opacity: 1;
+}
+
+.id {
+  text-align: center;
 }
