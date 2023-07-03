@@ -103,7 +103,11 @@ function App() {
         ))}
       </div>
       <div className="controller">
-        <button className="yayabutonu" onClick={handleYaya}>
+        <button
+          className="yayabutonu"
+          onClick={handleYaya}
+          disabled={activeLamp === "gryaya"}
+        >
           Yaya
         </button>
         <input
