@@ -50,6 +50,7 @@ function App() {
     switch (activeLamp) {
       case "wait1":
         setStep(1);
+        setTimer(5);
         timeout = setTimeout(function () {
           setActiveLamp("gr1");
         }, interval);
@@ -110,14 +111,18 @@ function App() {
         >
           Yaya
         </button>
-        <input
-          onChange={handleGreenTime}
-          className="yesilInput"
-          type="number"
-          min="1"
-          max="30"
-          value={greenTime / 1000}
-        />
+        <div>
+          <label htmlFor="greentime">Yesil Suresi</label>
+          <input
+            id="greentime"
+            onChange={handleGreenTime}
+            className="yesilInput"
+            type="number"
+            min="1"
+            max="30"
+            value={greenTime / 1000}
+          />
+        </div>
       </div>
     </div>
   );
